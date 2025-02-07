@@ -253,18 +253,66 @@
         background-color: rgba(227, 227, 237, 1);
       }
 
-      .img-image {
+      <!-- .img-image {
         min-width: 1000px;
         max-width: 1000px;
         justify-content: center;
         align-items: center;
-      }
+      } -->
 
       .img-image img {
-          max-width: 100%;
+          max-width: 80%;
           height: auto;
           border-radius: 10px;
       }
+
+      @media (max-width: 768px) {
+        header {
+            flex-direction: column;
+            text-align: center;
+        }
+
+        nav ul {
+            flex-direction: row;
+            gap: 10px;
+        }
+
+        .hero-button {
+            font-size: 16px;
+            padding: 10px 20px;
+        }
+
+        .contact-form, .contact-image {
+            padding: 10px;
+        }
+
+        .members {
+            grid-template-columns: repeat(2, 1fr);
+            margin: 0 auto;
+            justify-items: center; 
+        }
+
+        .members img {
+            width: 250px; 
+            height: 250px; 
+        }
+
+        .mission-image img {
+            max-width: 100%; 
+            height: auto; 
+        }
+
+        .img-image img {
+            max-width: 100%; 
+            height: auto; 
+        }
+    }
+
+    @media (max-width: 480px) {
+        .members {
+            grid-template-columns: 1fr; 
+        }
+    }
     </style>
 </head>
 <body>
@@ -376,7 +424,7 @@
                 <div>
                     <img src="images/Steven Teh.jpg" alt="Steven Teh">
                     <p>Steven Teh</p>
-                    <p>Member</p>
+                    <p>Advisor</p>
                 </div>
                 <div>
                     <img src="images/Gavin Hakimian - Headshot.jpg" alt="Gavin Hakimian">
