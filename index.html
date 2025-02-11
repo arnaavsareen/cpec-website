@@ -281,13 +281,9 @@
           padding: 10px 0;
       }
 
-      /* Hide desktop nav and show mobile nav */
-      .desktop-nav {
-          display: none;
-      }
-
       nav ul {
           flex-direction: row;
+          display: none;
           gap: 10px;
       }
 
@@ -333,31 +329,6 @@
             max-width: 100%;
             height: auto;
         }
-
-        /* Show the mobile navigation */
-        .topnav {
-          display: block;
-          width: 100%;
-          text-align: right;
-          background-color: #333;
-          padding: 10px 0;
-      }
-
-      .topnav a {
-          display: block;
-          padding: 14px;
-          color: white;
-          text-align: left;
-      }
-
-      .topnav .icon {
-          position: absolute;
-          right: 10px;
-          top: 10px;
-          font-size: 24px;
-          cursor: pointer;
-      }
-
       /* Center the logo properly */
       header img {
           height: 50px;
@@ -373,21 +344,16 @@
       nav ul {
           padding: 0;
           margin: 0;
-          display: flex;
+          display: none;
           justify-content: center;
           overflow-x: auto;
           flex-direction: row;
       }
-
-      nav a {
-          font-size: 12px;
-      }
-
+      
       .members {
           grid-template-columns: 1fr;
       }
     }
-
     </style>
 </head>
 <body>
